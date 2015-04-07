@@ -19,6 +19,10 @@
 		<servlet-name>CTPics</servlet-name>
 		<servlet-class>universsky.ct.report.CTPics</servlet-class>
 	</servlet>
+	<servlet-mapping>
+		<servlet-name>CTPics</servlet-name>
+		<url-pattern>/pic</url-pattern>
+	</servlet-mapping>
 
 	<servlet>
 		<description>CTCpuUsage</description>
@@ -26,18 +30,21 @@
 		<servlet-name>CTCpuUsage</servlet-name>
 		<servlet-class>universsky.ct.report.CTCpuUsage</servlet-class>
 	</servlet>
-
-
-	<servlet-mapping>
-		<servlet-name>CTPics</servlet-name>
-		<url-pattern>/pic</url-pattern>
-	</servlet-mapping>
-
 	<servlet-mapping>
 		<servlet-name>CTCpuUsage</servlet-name>
 		<url-pattern>/cpu</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<description>TCResultServlet</description>
+		<display-name>TCResultServlet</display-name>
+		<servlet-name>TCResultServlet</servlet-name>
+		<servlet-class>qjd.uitest.dao.TCResultServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TCResultServlet</servlet-name>
+		<url-pattern>/tc</url-pattern>
+	</servlet-mapping>
 
 
 </web-app>
