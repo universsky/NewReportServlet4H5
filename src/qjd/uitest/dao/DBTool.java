@@ -22,6 +22,9 @@ public class DBTool {
 	private JdbcTemplate jdbcTemplate = (JdbcTemplate) SpringUtil
 			.getBean("jdbcTemplate");
 
+	// @Autowired
+	// private JdbcTemplate jdbcTemplate;
+
 	public static void main(String[] args) {
 
 		String tcKey = "LoginTest.jslogin_UserNameIsEmptyTest";
@@ -30,10 +33,10 @@ public class DBTool {
 		String tcResult = "PASS";
 
 		DBTool DBTool = new DBTool();
-		DBTool.insertImgName(tcKey, timestamp, imgName, tcResult);
 
-		String v = DBTool.getTcValueBytcKey(tcKey);
-		System.out.println(v);
+		// DBTool.insertImgName(tcKey, timestamp, imgName, tcResult);
+		// String v = DBTool.getTcValueBytcKey(tcKey);
+		// System.out.println(v);
 
 		System.out.println(DBTool.getTCResultByTimeStamp(timestamp));
 

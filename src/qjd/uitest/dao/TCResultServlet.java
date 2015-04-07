@@ -28,6 +28,8 @@ public class TCResultServlet extends HttpServlet {
 		timestamp = req.getParameter("timestamp");
 		callback = req.getParameter("callback");
 
+		System.out.println("timestamp=" + timestamp);
+		System.out.println("callback=" + callback);
 		List<TCResult> tcResult = new DBTool()
 				.getTCResultByTimeStamp(timestamp);
 
