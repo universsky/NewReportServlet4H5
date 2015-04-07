@@ -20,6 +20,13 @@ public class TCResult {
 	private String imgName;
 	private String tcResult;
 
+	@Override
+	public String toString() {
+		return "Result [id=" + id + ", tcKey=" + tcKey + ", timeStamp="
+				+ timeStamp + ", imgName=" + imgName + ", tcResult=" + tcResult
+				+ "]";
+	}
+
 	public String getId() {
 		return id;
 	}
