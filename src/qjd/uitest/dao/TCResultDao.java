@@ -19,7 +19,7 @@ public class TCResultDao {
 	 */
 	public List<TCResult> getTCResultByTimeStamp(String timestamp) {
 		DBTool DBTool = new DBTool();
-		List<TCResult> result = new ArrayList<TCResult>();
+		List<TCResult> result = DBTool.getTCResultByTimeStamp(timestamp);
 		System.out.println(result);
 		return result;
 	}

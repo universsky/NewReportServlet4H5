@@ -30,7 +30,7 @@ public class TCResultServlet extends HttpServlet {
 
 		System.out.println("timestamp=" + timestamp);
 		System.out.println("callback=" + callback);
-		List<TCResult> tcResult = new DBTool()
+		List<TCResult> tcResult = new TCResultDao()
 				.getTCResultByTimeStamp(timestamp);
 
 		Gson gson = new Gson();

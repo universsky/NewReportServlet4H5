@@ -19,12 +19,40 @@ public class TCResult {
 	private String timeStamp;
 	private String imgName;
 	private String tcResult;
+	private String expected;
+	private String actual;
+	private String log;
 
 	@Override
 	public String toString() {
 		return "Result [id=" + id + ", tcKey=" + tcKey + ", timeStamp="
 				+ timeStamp + ", imgName=" + imgName + ", tcResult=" + tcResult
-				+ "]";
+				+ ", expected=" + expected + ", actual=" + actual + " , log="
+				+ log + "]";
+	}
+
+	public String getLog() {
+		return log;
+	}
+
+	public void setLog(String log) {
+		this.log = log;
+	}
+
+	public String getExpected() {
+		return expected;
+	}
+
+	public void setExpected(String expected) {
+		this.expected = expected;
+	}
+
+	public String getActual() {
+		return actual;
+	}
+
+	public void setActual(String actual) {
+		this.actual = actual;
 	}
 
 	public String getId() {

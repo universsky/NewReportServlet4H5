@@ -64,6 +64,9 @@ public class DBTool {
 			tcResult.setTimeStamp(resultMap.get("timestamp") + "");
 			tcResult.setImgName(resultMap.get("img_name") + "");
 			tcResult.setTcResult(resultMap.get("tc_result") + "");
+			tcResult.setExpected(resultMap.get("expected") + "");
+			tcResult.setActual(resultMap.get("actual") + "");
+			tcResult.setLog(resultMap.get("log") + "");
 			resultList.add(tcResult);
 
 		}
