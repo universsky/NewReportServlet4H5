@@ -25,6 +25,7 @@ public class TCResultServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException {
+
 		timestamp = req.getParameter("timestamp");
 		callback = req.getParameter("callback");
 
@@ -36,6 +37,8 @@ public class TCResultServlet extends HttpServlet {
 		Gson gson = new Gson();
 		String json = gson.toJson(tcResult);
 		System.out.println(callback + "(" + json + ")");
+
+		resp.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = resp.getWriter();
 		out.print(callback + "(" + json + ")");
 		out.flush();
